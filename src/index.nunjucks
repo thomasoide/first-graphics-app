@@ -9,6 +9,8 @@
 {% endblock %}
 
 {% block content %}
-<p>Hello world </p>
-<code class="version">v2.0.1</code>
+{% for obj in site.data.harvard_park_homicides %}
+  {{ obj.first_name }} {{ obj.last_name }}<br>
+{% endfor %}
+
 {% endblock %}
